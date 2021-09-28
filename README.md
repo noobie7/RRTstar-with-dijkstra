@@ -12,19 +12,20 @@ In the following maps, pink dot represents the starting point while blue dot is 
 
 RRT is based on incremental construction of search trees which rapidly and uniformly explore the state space. The path found may not be optimal but the algorithm is probablistically complete. 
 
-![Basic RRT](BasicRRT.gif)
+
 
 ### RRT*
 
 RRT* is an improvement over RRT. It is asymptotically optimal and probalisticaly complete. It continuously refines the paths formed to reach optimal path configuration. Due to the constant improvement, it is slower than RRT.
 
-![RRT*](RRTstar.gif)
 
-### *Anytime* RRT
 
-My implementation of Anytime RRT is a combination of RRT and RRT*. First, RRT is run to find any feasible path from start to destination. Once a path is found, RRT* is run to refine the alreafy explored search space and future paths. Thus, this hybrid prioritizes finding any path at first, later optimizing its length.
+### *Anytime* RRT + Dijkstra
 
-![Anytime RRT](AnytimeRRT.gif)
+My implementation of Anytime RRT is a combination of RRT and RRT*. First, RRT is run to find any feasible path from start to destination. Once a path is found, RRT* is run to refine the alreafy explored search space and future paths. Thus, this hybrid prioritizes finding any path at first, later optimizing its length. 
+Also refining the path using dijkstra after every 500 iterations.
+
+
 
 ## Requirements
 
