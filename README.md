@@ -1,6 +1,9 @@
 # RRTstar-with-dijkstra
 This is a C++ implementation of RRT* algorithm with application of Dijkstra algorithm over it to optimised the path for autonomous path planning. 
 
+The part below in this file is mostly copied from [Nikhil Chandak's Repo](https://github.com/nikhilchandak/Rapidly-Exploring-Random-Trees/blob/master/README.md)
+As it was his repo that was used as an fundamental baseline implementation.
+
 # Rapidly-Exploring-Random-Trees
 My C++ implementations of RRT, RRT* and Anytime RRT (path planning algorithm used in robotics). 
 
